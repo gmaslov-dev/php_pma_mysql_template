@@ -1,4 +1,7 @@
 # php_pma_mysql_template
+Шаблон представляет из себя заготовку под проект на PHP с возможностью перехода на Laravel.
+
+Из дополнительных инструментов присутствует PhpMyAdmin
 
 ## Структура проекта:
 ```text
@@ -47,7 +50,7 @@ project/
 Убедитесь, что у вас установлен Docker и Docker Compose.
 Создайте директории и файлы:
     app/ — для исходного кода приложения.
-    nginx/nginx.conf — для конфигурации Nginx.
+    nginx/conf.d/default.conf — для конфигурации Nginx.
     nginx/logs/ — для логов Nginx.
 Запустите команду:
 
@@ -79,11 +82,54 @@ docker-compose up -d
 (например, routes/, app/, storage/) автоматически появится 
 внутри папки app/. Убедитесь, что public/ остаётся корнем для веб-сервера.
 
-## Дополнительно
+## В случае ошибок
 
-### Конфиг nginx
-```yml
-volumes:
-- ./nginx/nginx.conf:/etc/nginx/nginx.conf
-- ./nginx/conf.d:/etc/nginx/conf.d
+### Проверка монтирования
+
+После запуска контейнеров проверьте, что папка public и её содержимое корректно смонтированы в контейнер:
+
+1. Посмотреть файлы в PHP-контейнере:
+
+```bash
+docker exec -it php_app ls /var/www/html/public
 ```
+
+2. Посмотреть файлы в Nginx-контейнере:
+
+```bash
+docker exec -it nginx_server ls /var/www/html/public
+```
+
+### Команды для запуска и проверки:
+
+Пересоздайте контейнеры:
+
+```bash
+docker-compose down
+docker-compose up --build -d
+```
+
+Проверьте, доступен ли index.php в браузере по адресу http://localhost:8080.
+
+## Таблица базовых команд Docker Compose
+
+| Команда                                     | Описание                                                   |
+|---------------------------------------------|------------------------------------------------------------|
+| `docker-compose up`                         | Запускает контейнеры, описанные в `docker-compose.yml` (по умолчанию в фоновом режиме). |
+| `docker-compose up -d`                      | Запускает контейнеры в фоновом режиме (detached mode).      |
+| `docker-compose down`                       | Останавливает и удаляет все контейнеры, сети и тома.        |
+| `docker-compose build`                      | Пересобирает образы контейнеров (если изменены Dockerfile или конфигурации). |
+| `docker-compose restart`                    | Перезапускает все контейнеры.                              |
+| `docker-compose ps`                         | Показывает список контейнеров, запущенных с использованием Compose. |
+| `docker-compose logs`                       | Показывает логи всех контейнеров, запущенных через Compose. |
+| `docker-compose exec <service> <command>`    | Выполняет команду в работающем контейнере. Например: `docker-compose exec app bash`. |
+| `docker-compose run <service> <command>`     | Запускает одноразовый контейнер для выполнения команды. Пример: `docker-compose run app php -v`. |
+| `docker-compose stop`                       | Останавливает все запущенные контейнеры.                   |
+| `docker-compose start`                      | Запускает остановленные контейнеры.                        |
+| `docker-compose logs <service>`             | Показывает логи конкретного сервиса (например, `docker-compose logs nginx`). |
+| `docker-compose pull`                       | Загружает образы контейнеров из реестра (например, Docker Hub). |
+| `docker-compose push`                       | Загружает локальные образы в Docker Hub (или другой реестр). |
+| `docker-compose config`                     | Показывает текущую конфигурацию Docker Compose, включая все переменные окружения. |
+| `docker-compose rm`                         | Удаляет остановленные контейнеры.                          |
+| `docker-compose ps -a`                      | Показывает список всех контейнеров, включая остановленные. |
+| `docker-compose top`                        | Показывает процессы, работающие внутри контейнеров.         |

@@ -1,0 +1,139 @@
+2024/12/06 10:38:29 [notice] 1#1: using the "epoll" event method
+2024/12/06 10:38:29 [notice] 1#1: nginx/1.27.3
+2024/12/06 10:38:29 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/12/06 10:38:29 [notice] 1#1: OS: Linux 6.10.14-linuxkit
+2024/12/06 10:38:29 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/12/06 10:38:29 [notice] 1#1: start worker processes
+2024/12/06 10:38:29 [notice] 1#1: start worker process 28
+2024/12/06 10:38:29 [notice] 1#1: start worker process 29
+2024/12/06 10:38:29 [notice] 1#1: start worker process 30
+2024/12/06 10:38:29 [notice] 1#1: start worker process 31
+2024/12/06 10:44:52 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/12/06 10:44:52 [notice] 28#28: gracefully shutting down
+2024/12/06 10:44:52 [notice] 28#28: exiting
+2024/12/06 10:44:52 [notice] 29#29: gracefully shutting down
+2024/12/06 10:44:52 [notice] 29#29: exiting
+2024/12/06 10:44:52 [notice] 31#31: gracefully shutting down
+2024/12/06 10:44:52 [notice] 31#31: exiting
+2024/12/06 10:44:52 [notice] 30#30: gracefully shutting down
+2024/12/06 10:44:52 [notice] 30#30: exiting
+2024/12/06 10:44:52 [notice] 28#28: exit
+2024/12/06 10:44:52 [notice] 29#29: exit
+2024/12/06 10:44:52 [notice] 31#31: exit
+2024/12/06 10:44:52 [notice] 30#30: exit
+2024/12/06 10:44:52 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2024/12/06 10:44:52 [notice] 1#1: worker process 28 exited with code 0
+2024/12/06 10:44:52 [notice] 1#1: worker process 29 exited with code 0
+2024/12/06 10:44:52 [notice] 1#1: worker process 30 exited with code 0
+2024/12/06 10:44:52 [notice] 1#1: worker process 31 exited with code 0
+2024/12/06 10:44:52 [notice] 1#1: exit
+2024/12/06 10:45:10 [notice] 1#1: using the "epoll" event method
+2024/12/06 10:45:10 [notice] 1#1: nginx/1.27.3
+2024/12/06 10:45:10 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/12/06 10:45:10 [notice] 1#1: OS: Linux 6.10.14-linuxkit
+2024/12/06 10:45:10 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/12/06 10:45:10 [notice] 1#1: start worker processes
+2024/12/06 10:45:10 [notice] 1#1: start worker process 28
+2024/12/06 10:45:10 [notice] 1#1: start worker process 29
+2024/12/06 10:45:10 [notice] 1#1: start worker process 30
+2024/12/06 10:45:10 [notice] 1#1: start worker process 31
+2024/12/06 10:46:05 [error] 28#28: *1 directory index of "/var/www/html/public/" is forbidden, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
+2024/12/06 10:46:06 [error] 28#28: *1 directory index of "/var/www/html/public/" is forbidden, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
+2024/12/06 10:46:08 [error] 28#28: *1 directory index of "/var/www/html/public/" is forbidden, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
+2024/12/06 10:46:32 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/12/06 10:46:32 [notice] 28#28: gracefully shutting down
+2024/12/06 10:46:32 [notice] 31#31: gracefully shutting down
+2024/12/06 10:46:32 [notice] 31#31: exiting
+2024/12/06 10:46:32 [notice] 30#30: gracefully shutting down
+2024/12/06 10:46:32 [notice] 30#30: exiting
+2024/12/06 10:46:32 [notice] 30#30: exit
+2024/12/06 10:46:32 [notice] 31#31: exit
+2024/12/06 10:46:32 [notice] 29#29: gracefully shutting down
+2024/12/06 10:46:32 [notice] 29#29: exiting
+2024/12/06 10:46:32 [notice] 29#29: exit
+2024/12/06 10:46:32 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2024/12/06 10:46:32 [notice] 1#1: worker process 29 exited with code 0
+2024/12/06 10:46:32 [notice] 1#1: worker process 30 exited with code 0
+2024/12/06 10:46:32 [notice] 1#1: worker process 31 exited with code 0
+2024/12/06 10:46:32 [notice] 1#1: signal 29 (SIGIO) received
+2024/12/06 10:46:32 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2024/12/06 10:47:26 [notice] 1#1: using the "epoll" event method
+2024/12/06 10:47:26 [notice] 1#1: nginx/1.27.3
+2024/12/06 10:47:26 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/12/06 10:47:26 [notice] 1#1: OS: Linux 6.10.14-linuxkit
+2024/12/06 10:47:26 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/12/06 10:47:26 [notice] 1#1: start worker processes
+2024/12/06 10:47:26 [notice] 1#1: start worker process 28
+2024/12/06 10:47:26 [notice] 1#1: start worker process 29
+2024/12/06 10:47:26 [notice] 1#1: start worker process 30
+2024/12/06 10:47:26 [notice] 1#1: start worker process 31
+2024/12/06 10:47:38 [error] 29#29: *2 directory index of "/var/www/html/public/" is forbidden, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
+2024/12/06 10:47:38 [error] 29#29: *2 directory index of "/var/www/html/public/" is forbidden, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
+2024/12/06 10:47:39 [error] 29#29: *2 directory index of "/var/www/html/public/" is forbidden, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
+2024/12/06 10:48:51 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/12/06 10:48:51 [notice] 28#28: gracefully shutting down
+2024/12/06 10:48:51 [notice] 29#29: gracefully shutting down
+2024/12/06 10:48:51 [notice] 28#28: exiting
+2024/12/06 10:48:51 [notice] 30#30: gracefully shutting down
+2024/12/06 10:48:51 [notice] 30#30: exiting
+2024/12/06 10:48:51 [notice] 31#31: gracefully shutting down
+2024/12/06 10:48:51 [notice] 29#29: exiting
+2024/12/06 10:48:51 [notice] 28#28: exit
+2024/12/06 10:48:51 [notice] 29#29: exit
+2024/12/06 10:48:51 [notice] 30#30: exit
+2024/12/06 10:48:51 [notice] 31#31: exiting
+2024/12/06 10:48:51 [notice] 31#31: exit
+2024/12/06 10:48:51 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2024/12/06 10:48:51 [notice] 1#1: worker process 28 exited with code 0
+2024/12/06 10:48:51 [notice] 1#1: worker process 30 exited with code 0
+2024/12/06 10:48:51 [notice] 1#1: signal 29 (SIGIO) received
+2024/12/06 10:48:51 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2024/12/06 10:48:51 [notice] 1#1: worker process 29 exited with code 0
+2024/12/06 10:48:51 [notice] 1#1: worker process 31 exited with code 0
+2024/12/06 10:48:51 [notice] 1#1: exit
+2024/12/06 10:49:14 [notice] 1#1: using the "epoll" event method
+2024/12/06 10:49:14 [notice] 1#1: nginx/1.27.3
+2024/12/06 10:49:14 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/12/06 10:49:14 [notice] 1#1: OS: Linux 6.10.14-linuxkit
+2024/12/06 10:49:14 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/12/06 10:49:14 [notice] 1#1: start worker processes
+2024/12/06 10:49:14 [notice] 1#1: start worker process 28
+2024/12/06 10:49:14 [notice] 1#1: start worker process 29
+2024/12/06 10:49:14 [notice] 1#1: start worker process 30
+2024/12/06 10:49:14 [notice] 1#1: start worker process 31
+2024/12/06 10:49:17 [error] 28#28: *1 directory index of "/var/www/html/public/" is forbidden, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
+2024/12/06 10:49:18 [error] 28#28: *1 directory index of "/var/www/html/public/" is forbidden, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
+2024/12/06 10:49:19 [error] 28#28: *1 directory index of "/var/www/html/public/" is forbidden, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
+2024/12/06 10:49:50 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2024/12/06 10:49:50 [notice] 28#28: gracefully shutting down
+2024/12/06 10:49:50 [notice] 31#31: gracefully shutting down
+2024/12/06 10:49:50 [notice] 29#29: gracefully shutting down
+2024/12/06 10:49:50 [notice] 29#29: exiting
+2024/12/06 10:49:50 [notice] 30#30: gracefully shutting down
+2024/12/06 10:49:50 [notice] 31#31: exiting
+2024/12/06 10:49:50 [notice] 29#29: exit
+2024/12/06 10:49:50 [notice] 31#31: exit
+2024/12/06 10:49:50 [notice] 30#30: exiting
+2024/12/06 10:49:50 [notice] 30#30: exit
+2024/12/06 10:49:50 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2024/12/06 10:49:50 [notice] 1#1: worker process 30 exited with code 0
+2024/12/06 10:49:50 [notice] 1#1: signal 29 (SIGIO) received
+2024/12/06 10:49:50 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2024/12/06 10:49:50 [notice] 1#1: worker process 31 exited with code 0
+2024/12/06 10:49:50 [notice] 1#1: signal 29 (SIGIO) received
+2024/12/06 10:49:50 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2024/12/06 10:49:50 [notice] 1#1: worker process 29 exited with code 0
+2024/12/06 10:49:50 [notice] 1#1: signal 29 (SIGIO) received
+2024/12/06 10:50:27 [notice] 1#1: using the "epoll" event method
+2024/12/06 10:50:27 [notice] 1#1: nginx/1.27.3
+2024/12/06 10:50:27 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/12/06 10:50:27 [notice] 1#1: OS: Linux 6.10.14-linuxkit
+2024/12/06 10:50:27 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/12/06 10:50:27 [notice] 1#1: start worker processes
+2024/12/06 10:50:27 [notice] 1#1: start worker process 27
+2024/12/06 10:50:27 [notice] 1#1: start worker process 28
+2024/12/06 10:50:27 [notice] 1#1: start worker process 29
+2024/12/06 10:50:27 [notice] 1#1: start worker process 30
+2024/12/06 10:50:33 [error] 27#27: *1 directory index of "/var/www/html/public/" is forbidden, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
+2024/12/06 10:50:33 [error] 27#27: *1 directory index of "/var/www/html/public/" is forbidden, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"
+2024/12/06 10:50:35 [error] 27#27: *1 directory index of "/var/www/html/public/" is forbidden, client: 172.20.0.1, server: localhost, request: "GET / HTTP/1.1", host: "localhost:8080"

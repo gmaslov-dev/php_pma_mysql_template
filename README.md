@@ -1,0 +1,1 @@
+# php_pma_mysql_template
